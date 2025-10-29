@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome | Event Platform</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      overflow: hidden;
+    }
+    .container {
+      text-align: center;
+      padding: 40px 60px;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(12px);
+      animation: fadeIn 1.2s ease-in-out;
+    }
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 15px;
+    }
+    p {
+      color: #f1f1f1;
+      margin-bottom: 25px;
+      font-size: 1rem;
+    }
+    button {
+      margin: 12px;
+      padding: 14px 26px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .signup {
+      background: #00c853;
+      color: white;
+    }
+    .signup:hover {
+      background: #00a944;
+      transform: translateY(-3px);
+    }
+    .login {
+      background: #2979ff;
+      color: white;
+    }
+    .login:hover {
+      background: #0b5de9;
+      transform: translateY(-3px);
+    }
+    .reset {
+      background: #ff7043;
+      color: white;
+    }
+    .reset:hover {
+      background: #f4511e;
+      transform: translateY(-3px);
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>✨ Welcome to Event Platform</h1>
+    <p>Choose an option below to get started</p>
+    <button class="signup" onclick="location.href='signup.html'">📝 Signup</button>
+    <button class="login" onclick="location.href='login.html'">🔑 Login</button>
+    <button class="reset" onclick="location.href='forgot.html'">🔄 Reset Password</button>
+  </div>
+</body>
+</html>
